@@ -1,0 +1,352 @@
+
+html, body, div, ul, li{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	display: block;
+}
+
+html, body{
+	min-height: 100%;
+}
+
+img{
+	height: auto !important;
+}
+
+p{
+	line-height: 1.5;
+}
+
+
+.header{
+	background: #fff;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	border: 1px solid rgba(0,0,0,0.2);
+	height: 60px;
+}
+
+.header__links{
+	line-height: 40px;
+	padding: 10px;
+	display: inline-block;
+}
+
+.content{
+	margin-top: 60px;
+}
+
+.content__main{
+	max-width: 1200px;
+	margin: 0 auto;
+	display: block;
+	padding: 30px;
+	min-height: 100%;
+}
+
+.align-right{
+	text-align: right;
+}
+
+ul.horizontal-list{
+	list-style: none;
+}
+
+ul.horizontal-list > li {
+	display: inline-block;
+}
+
+ul.horizontal-list > li > a{
+	display: inline-block;
+}
+
+/* AUCTIONS */
+
+.auction__main{
+	display: table;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.auction__main__image, .auction__main__listing{
+	display: table-cell;
+	padding: 20px;
+	vertical-align: top;
+}
+
+.auction__main__image{
+	width: 60%;
+	text-align: center;
+}
+
+.auction__main__image > img{
+	max-width: 100%;
+	display: inline-block;
+}
+
+.auction__main__image > .other-images > li {
+	padding: 5px;
+	margin: 5px;
+	border: 2px solid #ddd;
+	max-width: 33%;
+}
+
+.auction__main__image > .other-images > li > img{
+	width: 100px;
+	max-width: 100%;
+}
+
+.auction__main__listing{
+	width: 40%;
+}
+
+.auction__main__listing__actions{
+		margin-bottom: 10px;
+		text-align: right;
+}
+
+.auction__main__listing__actions > a{
+		display: inline-block;
+		padding: 10px;
+		cursor: pointer;
+		text-decoration: none;
+}
+
+.auction__main__listing__actions > a:hover {
+		text-decoration: none;
+}
+
+.auction__main__listing__title{
+		margin-bottom: 30px;
+}
+
+.auction__main__listing__title > h1 {
+	display: inline-block;
+	margin: 0px;
+	line-height: 40px;
+	vertical-align: middle;
+	font-weight: 600;
+}
+
+.auction__main__listing__title > span.bids-count {
+	display: inline-block;
+	margin: 0px;
+	margin-left: 20px;
+	line-height: 40px;
+	vertical-align: middle;
+	font-size: 20px;
+	color: green;
+}
+
+.auction__main__listing__seller {
+		margin-bottom: 20px;
+}
+
+.auction__main__listing__seller > div.primary {
+		margin-bottom: 15px;
+}
+
+.auction__main__listing__seller > div > .description {
+		font-size: 18px;
+		line-height: 50px;
+}
+
+.auction__main__listing__seller > div > .seller {
+	float: right;
+	display: inline-block;
+}
+
+.auction__main__listing__seller > div > a,  .auction__main__listing__seller > div > a:hover {
+		color: #444;
+		text-decoration: none;
+}
+
+.auction__main__listing__seller > div > a > img{
+		width: 50px;
+		height: 50px;
+		display: inline-block;
+		border-radius: 50%;
+		vertical-align: middle;
+}
+
+.auction__main__listing__seller > div > a > span.name{
+		line-height: 50px;
+		display: inline-block;
+		vertical-align: middle;
+		font-weight: 500;
+		letter-spacing: 0.2px;
+		font-size: 18px;
+		margin-left: 5px;
+}
+
+
+.auction__main__listing__current-bid {
+		padding: 20px 0px;
+		border-top: 2px solid #ddd;
+		border-bottom: 2px solid #ddd;
+		margin-bottom: 30px;
+}
+
+.auction__main__listing__current-bid > div {
+		margin-bottom: 20px;
+}
+
+.auction__main__listing__current-bid > div:last-child {
+		margin-bottom: 0px;
+}
+
+.auction__main__listing__current-bid > div > .description, .auction__main__listing__current-bid > div > .price {
+		line-height: 30px;
+		font-size: 18px;
+}
+
+.auction__main__listing__current-bid > .description {
+
+}
+
+.auction__main__listing__current-bid > div > .price, .auction__main__listing__current-bid > div > .time  {
+		float: right;
+		font-weight: 600;
+		line-height: 30px;
+}
+
+.auction__main__listing__current-bid > div > .time  {
+		color: blue;
+}
+
+.auction__main__listing__current-bid > div > .bid-count {
+		opacity: 0.7;
+		letter-spacing: 0.5px;
+}
+
+.auction__main__listing__bid-select{
+	border: 2px solid #ddd;
+	border-radius: 2px;
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+
+.auction__main__listing__bid-select:focus{
+	border: 2px solid #000;
+	outline: none;
+}
+
+
+.auction__main__listing__bid-cta, .auction__main__listing__buy-now-cta{
+	width: 100%;
+	border-radius: 2px;
+	border: none;
+	outline: none;
+	text-transform: uppercase;
+	padding: 15px;
+	border: 1px solid transparent;
+	letter-spacing: 0.5px;
+	font-weight: 600;
+}
+
+.auction__main__listing__bid-cta{
+	background: #000;
+	color: #fff;
+}
+
+.auction__main__listing__buy-now-cta{
+	background: #18B33E;
+	color: #fff;
+}
+
+.auction__main__listing__set-bid{
+
+}
+
+.auction__main__listing__set-bid > .description {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.auction__details{
+
+}
+
+.auction__details__filter-list{
+	border-bottom: 2px solid #ddd;
+}
+
+.auction__details__filter-list > li {
+	margin-bottom: -2px;
+}
+
+.auction__details__filter-list > li > a {
+	display: inline-block;
+	color: #666;
+	letter-spacing: 0.5px;
+	padding: 15px 20px;
+	font-size: 18px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.auction__details__filter-list > li > a.active {
+	color: #333;
+	font-weight: 600;
+	border-bottom: 2px solid #333;
+}
+
+.auction__details__content{
+	padding: 20px 10px;
+}
+
+@media (max-width: 886px) {
+	.auction__main{
+		display: block;
+	}
+
+	.auction__main__image, .auction__main__listing{
+		display: block;
+		padding: 20px;
+	}
+
+	.auction__main__image{
+		width: 100%;
+		padding: 5px;
+	}
+
+	.auction__main__image > img{
+		max-width: 75%;
+	}
+
+	.auction__main__listing{
+		width: 100%;
+		padding: 5px;
+	}
+
+	.auction__main__listing__actions{
+		text-align: center;
+		margin-bottom: 25px;
+	}
+
+	.auction__main__listing__title{
+		text-align: center;
+		margin-bottom: 35px;
+	}
+	.horizontal-list.auction__details__filter-list {
+		display: table;
+		width: 100%;
+	}
+
+	.horizontal-list.auction__details__filter-list > li {
+		display: table-cell;
+	}
+
+	.horizontal-list.auction__details__filter-list > li > a {
+		display: block;
+		text-align: center;
+		font-size: 16px;
+	}
+
+}

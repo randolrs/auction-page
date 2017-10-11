@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles/styles.sass">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link type="text/sass" href="styles/styles.sass">
+    <link rel="stylesheet" href="styles/bootstrap_and_customizations.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type='text/javascript' src='scripts/app.js'></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Starter Page</title>
+  </head>
+  <body>
+
+    <div class="header">
+      <a class="header__links">
+        Home
+      </a>
+    </div>
+
+    <div class="content">
+
+      <div class="content__main">
+        <div class="auction__main">
+          <div class="auction__main__image">
+            <div style="text-align: left;">
+              <a>Return to Auction Catalog</a>
+            </div>
+
+            <img src="images/drone.jpg"></img>
+
+            <ul class="horizontal-list other-images">
+              <li><img src="images/drone.jpg"></img></li>
+              <li><img src="images/drone.jpg"></img></li>
+              <li><img src="images/drone.jpg"></img></li>
+            </ul>
+          </div>
+
+          <div class="auction__main__listing">
+            <div class="auction__main__listing__actions">
+              <a>Contact Seller</a>
+              <a>Add to My Watchlist</a>
+            </div>
+            <div class="auction__main__listing__title">
+              <h1>An Awesome Drone</h1>
+            </div>
+            <div class="auction__main__listing__seller">
+              <div class="primary">
+                <span class="description">Offered by: </span>
+                <a class="seller" href="#">
+                  <img src="images/shane.jpg"></img>
+                  <span  class="name">Shane</span>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="auction__main__listing__current-bid">
+              <div>
+                <span class="description">Current Bid: </span>
+                <span class="price">$400</span>
+                <br>
+                <span class="bid-count">(46 Bids)</span>
+              </div>
+              <div>
+                <span class="description">Estimated Winning Bid: </span>
+                <span class="price">$700</span>
+              </div>
+              <div>
+                <span class="description">Time Remaining: </span>
+                <span class="time" id="time-remaining"></span>
+              </div>
+            </div>
+
+            <div class="auction__main__listing__set-bid">
+              <p class="description">SET YOUR MAXIMUM BID</p>
+              <select class="auction__main__listing__bid-select" name="bid">
+                <option value="200">$200</option>
+                <option value="250">$250</option>
+                <option value="300">$300</option>
+                <option value="350">$350</option>
+                <option value="400">$400</option>
+              </select>
+              <button class="auction__main__listing__bid-cta">Place Bid</button><br><br>
+              <button class="auction__main__listing__buy-now-cta">Buy it Now for $600.00</button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="auction__details">
+
+          <ul class="horizontal-list auction__details__filter-list">
+            <li><a class="active">Description</a></li>
+            <li><a>Detail</a></li>
+            <li><a>Shipping</a></li>
+          </ul>
+
+          <div class="auction__details__content">
+            <p>With the?Phantom 3 Standard,?DJI?introduces 2.7K ("UHD") aerial video acquisition to the Phantom line. Its dedicated camera is mounted via a 3-axis motorized gimbal that stabilizes the footage and enables manual tilting from a dial on the controller. The control signal operates on 5.8 GHz, plus there is a 2.4 GHz Wi-Fi downlink for live 720p video monitoring and app-based control using DJI's free GO app. Thanks to a Wi-Fi range extender, the Wi-Fi boasts a range of 3280' line-of-sight. GPS equipped, the Phantom 3 Standard sports the assisted flying features, such as automatic return home, that have become staples of the Phantom series. Thanks to redesigned, more efficient motors, flight times of up to 25 minutes are possible.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>
