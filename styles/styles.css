@@ -83,6 +83,11 @@ ul.horizontal-list > li > a{
 	text-align: center;
 }
 
+.auction__main__image > div > a {
+	display: inline-block;
+	padding: 10px;
+}
+
 .auction__main__image > img{
 	max-width: 100%;
 	display: inline-block;
@@ -95,9 +100,14 @@ ul.horizontal-list > li > a{
 	max-width: 33%;
 }
 
+.auction__main__image > .other-images > li:hover {
+	border: 2px solid #666;
+}
+
 .auction__main__image > .other-images > li > img{
 	width: 100px;
 	max-width: 100%;
+	cursor: pointer;
 }
 
 .auction__main__listing{
@@ -151,8 +161,9 @@ ul.horizontal-list > li > a{
 }
 
 .auction__main__listing__seller > div > .description {
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 50px;
+		color: #666;
 }
 
 .auction__main__listing__seller > div > .seller {
@@ -204,8 +215,9 @@ ul.horizontal-list > li > a{
 		font-size: 18px;
 }
 
-.auction__main__listing__current-bid > .description {
-
+.auction__main__listing__current-bid > div > .description {
+	color: #666;
+	font-size: 16px;
 }
 
 .auction__main__listing__current-bid > div > .price, .auction__main__listing__current-bid > div > .time  {
@@ -216,6 +228,7 @@ ul.horizontal-list > li > a{
 
 .auction__main__listing__current-bid > div > .time  {
 		color: blue;
+		font-size: 18px;
 }
 
 .auction__main__listing__current-bid > div > .bid-count {
@@ -233,7 +246,7 @@ ul.horizontal-list > li > a{
 }
 
 .auction__main__listing__bid-select:focus{
-	border: 2px solid #000;
+	border: 2px solid #666;
 	outline: none;
 }
 
