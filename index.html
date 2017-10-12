@@ -6,6 +6,7 @@
     <link type="text/sass" href="styles/styles.sass">
     <link rel="stylesheet" href="styles/bootstrap_and_customizations.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type='text/javascript' src='scripts/app.js'></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -23,7 +24,9 @@
 
       <div class="content__main">
         <div class="auction__main">
+
           <div class="auction__main__image">
+
             <div style="text-align: left;">
               <a>Return to Auction Catalog</a>
             </div>
@@ -76,11 +79,11 @@
             <div class="auction__main__listing__set-bid">
               <p class="description">SET YOUR MAXIMUM BID</p>
               <select class="auction__main__listing__bid-select" name="bid">
-                <option value="200">$200</option>
-                <option value="250">$250</option>
-                <option value="300">$300</option>
-                <option value="350">$350</option>
-                <option value="400">$400</option>
+                <option value="200">$450</option>
+                <option value="200">$500</option>
+                <option value="200">$550</option>
+                <option value="200">$600</option>
+                <option value="200">$650</option>
               </select>
               <button class="auction__main__listing__bid-cta">Place Bid</button><br><br>
               <button class="auction__main__listing__buy-now-cta">Buy it Now for $600.00</button>
@@ -93,13 +96,47 @@
         <div class="auction__details">
 
           <ul class="horizontal-list auction__details__filter-list">
-            <li><a class="active">Description</a></li>
-            <li><a>Detail</a></li>
-            <li><a>Shipping</a></li>
+            <li><a class="active click-to-reveal" data-reveal-panel-id="item-details">Item Details</a></li>
+            <li><a class="click-to-reveal" data-reveal-panel-id="payment-shipping">Payment & Shipping</a></li>
+            <li><a class="click-to-reveal" data-reveal-panel-id="seller-info">Seller Info</a></li>
           </ul>
 
-          <div class="auction__details__content">
+          <div id="item-details" class="reveal-panel auction__details__content">
             <p>With the?Phantom 3 Standard,?DJI?introduces 2.7K ("UHD") aerial video acquisition to the Phantom line. Its dedicated camera is mounted via a 3-axis motorized gimbal that stabilizes the footage and enables manual tilting from a dial on the controller. The control signal operates on 5.8 GHz, plus there is a 2.4 GHz Wi-Fi downlink for live 720p video monitoring and app-based control using DJI's free GO app. Thanks to a Wi-Fi range extender, the Wi-Fi boasts a range of 3280' line-of-sight. GPS equipped, the Phantom 3 Standard sports the assisted flying features, such as automatic return home, that have become staples of the Phantom series. Thanks to redesigned, more efficient motors, flight times of up to 25 minutes are possible.</p>
+          </div>
+
+          <div id="payment-shipping" class="reveal-panel auction__details__content">
+            <p>PAAPMSMDMDM</p>
+          </div>
+
+          <div id="seller-info" class="reveal-panel auction__details__content">
+            <p>SELLELELRR ODMDMOMOFM FOMFOM</p>
+          </div>
+
+        </div>
+
+        <div class="auction__more">
+
+          <h2>You May Also Like</h2>
+
+          <div class="auction__more__grid">
+
+            <div class="auction__more__grid__entry">
+              <img src="images/drone.jpg"></img>
+            </div>
+
+            <div class="auction__more__grid__entry">
+              <img src="images/drone.jpg"></img>
+            </div>
+
+            <div class="auction__more__grid__entry">
+              <img src="images/drone.jpg"></img>
+            </div>
+
+            <div class="auction__more__grid__entry">
+              <img src="images/drone.jpg"></img>
+            </div>
+
           </div>
 
         </div>
