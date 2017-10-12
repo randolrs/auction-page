@@ -29,6 +29,7 @@ p{
 	right: 0px;
 	border: 1px solid rgba(0,0,0,0.2);
 	height: 60px;
+	z-index: 99;
 }
 
 .header__links{
@@ -39,6 +40,7 @@ p{
 
 .content{
 	margin-top: 60px;
+	z-index: 1;
 }
 
 .content__main{
@@ -373,6 +375,18 @@ ul.horizontal-list > li > a{
 	.auction__main__listing__actions{
 		text-align: center;
 		margin-bottom: 25px;
+	}
+
+	.auction__main__listing__set-bid{
+		position: fixed;
+		bottom: 0px;
+		width: 100%;
+		left: 0px;
+		right: 0px;
+		background: #fff;
+		padding: 20px;
+		border-top: 1px solid rgba(0,0,0,0.1);
+		box-shadow: 0px -1px 2px rgba(0,0,0,0.1);
 	}
 
 	.auction__main__listing__title{
