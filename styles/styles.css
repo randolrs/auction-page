@@ -334,10 +334,16 @@ ul.horizontal-list > li > a{
 	padding: 10px;
 }
 
-.auction__more__grid__entry > img{
+.auction__more__grid__entry > .auction__more__grid__entry__item{
 	border: 2px solid #ddd;
 	cursor: pointer;
+	padding: 10px;
 }
+
+.auction__more__grid__entry > .auction__more__grid__entry__item:hover {
+	border: 2px solid #666;
+}
+
 
 
 @media (max-width: 886px) {
