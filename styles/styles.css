@@ -380,6 +380,13 @@ ul.horizontal-list > li > a{
 	.content__main{
 		padding: 10px;
 	}
+
+	.auction__main__listing__actions > .auction__main__listing__actions__button {
+			display: block;
+			width: 100%;
+			padding: 10px;
+	}
+	
 	.auction__main__listing__set-bid{
 		position: fixed;
 		bottom: 0px;
